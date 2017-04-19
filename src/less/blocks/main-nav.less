@@ -19,9 +19,9 @@
     cursor: pointer;
     display: inline-block;
     position: relative;
-    text-transform: uppercase;
-    padding-left: 10px;
+    text-transform: uppercase;    
     a {
+      display: block;
       color: inherit;
       white-space: nowrap;
     }
@@ -64,11 +64,8 @@
       border-bottom: 5px solid #fff;
     }    
   }
-  &__item:hover &__list-lvl2 {
-    display: block;
-  }
-  &__list-lvl2 &__item:hover &__list-lvl3 {
-    display: block;
+  &__list-lvl2 &__item {
+    padding-left: 10px;
   }  
   &__list-lvl2 &__item,
   &__list-lvl3 &__item {       
