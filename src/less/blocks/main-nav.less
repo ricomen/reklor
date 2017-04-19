@@ -1,10 +1,89 @@
 .main-nav {
-  &__list {
+  &__list,
+  &__list-lvl2,
+  &__list-lvl3 {
+    font-size: 20px;
     margin: 0;
     padding: 0;
     list-style: none;
+    font-weight: 700;
+    color: @dkblue;
+  }
+  &__list > &__item {
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &__item {
-    
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 10px;
+    a {
+      color: inherit;
+      white-space: nowrap;
+    }
   }
+  &__item &__item--dropdown {
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 5px;
+      border: 5px solid transparent;
+      border-left: 6px solid @blue;
+    }
+    &:hover {
+      text-decoration: underline;
+      &:before {
+        top: 8px;
+        left: -3px;
+        border-top: 6px solid @blue;
+        border-left: 5px solid transparent;
+      }
+    }
+  }
+  &__list-lvl2 {
+    display: none;
+    position: absolute;
+    padding: 8px 10px;
+    top: 120%;
+    left: -50%;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 10.497px 12.075px 12.48px 0.52px rgba(0, 0, 0, 0.16);
+    background-color: #fff; 
+    &::before {
+      position: absolute;
+      content: "";
+      left: 80px;
+      bottom: 100%;       
+      border: 5px solid transparent;
+      border-bottom: 5px solid #fff;
+    }    
+  }
+  &__item:hover &__list-lvl2 {
+    display: block;
+  }
+  &__list-lvl2 &__item:hover &__list-lvl3 {
+    display: block;
+  }  
+  &__list-lvl2 &__item,
+  &__list-lvl3 &__item {       
+    text-transform: none;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  } 
+  &__list-lvl3 {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  &__list-lvl3 &__item {
+    color: @blue;
+  } 
 }

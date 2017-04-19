@@ -2,7 +2,7 @@ const gulp           = require('gulp');
 const less           = require('gulp-less');
 const browserSync    = require('browser-sync');
 const concat         = require('gulp-concat');
-const uglify         = require('gulp-uglify');
+
 const cssnano        = require('gulp-cssnano');
 const rename         = require('gulp-rename');
 const del            = require('del');
@@ -18,13 +18,13 @@ const svgstore       = require('gulp-svgstore');
 const svgmin         = require('gulp-svgmin');
 const cheerio        = require('gulp-cheerio');
 const replace        = require('gulp-replace');
-const smartgrid      = require('smart-grid');
+
 const pug            = require('gulp-pug2');
-const eslint         = require('gulp-eslint');
+
 const notify         = require('gulp-notify');
-const babel          = require('gulp-babel');
+
 const sourcemaps     = require('gulp-sourcemaps');
-const gulpIf         = require('gulp-if');
+
 
 // const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 
