@@ -1,2 +1,38 @@
 footer.page-footer
-  
+  .container
+    .page-footer__row
+      .page-footer__col
+        .page-footer__logo
+           img(src="img/svg/footer-logo.svg", alt="")
+        p.page-footer__text Компания осуществляет правовое обслуживание организаций различных направлений деятельности и форм собственности — от частных предпринимателей до крупных корпораций. 
+        .social
+          a(href="www.facebook.com" class="") 1
+          a(href="www.googleplus.com" class="") 1
+          a(href="www.twitter.com" class="") 1
+      .page-footer__col
+        h2.page-footer__title Наш адрес:
+        p г. Киев,<br> ул. Сечевих Стрельцов<br>(Артема), 77, офис 320
+        .page-footer__phones
+          a(href="tel:0442231995") (044) 223 19 95 
+          a(href="tel:0986398787") (098) 639 87 87
+      .page-footer__col
+        h2.page-footer__title Карта сайта:
+        .page-footer__nav
+          ul.page-footer__nav-list
+            li.page-footer__nav-item
+              a(href="index.html") Главная
+            li.page-footer__nav-item
+              a(href="services.html") Услуги
+            li.page-footer__nav-item
+              a(href="about.html") О компании
+            li.page-footer__nav-item
+              a(href="news.html") Новости и статьи
+            li.page-footer__nav-item
+              a(href="contacts.html") Контакты
+      .page-footer__col
+        h2.page-footer__title Подписка на новости
+        form.subscribe-form(action="/" method="POST")
+          input(type="text" name="email" placeholder="e-mail")
+          button(type="button" class="btn btn--orange btn--full-width") Подписаться
+    .page-footer__row
+      .page-footer__copyright Copyright &copy; 2017 Компания "Реклор". Все права защищены.

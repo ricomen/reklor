@@ -110,8 +110,8 @@ gulp.task('pug', function() {
 //LESS-препроцессор
 gulp.task('less', function() {
   gulp.src('src/less/style.less')
-    .pipe(sourcemaps.init())
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+    .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(csscomb())
     .pipe(sourcemaps.write())
