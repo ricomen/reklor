@@ -1,37 +1,57 @@
 header.page-header
   .container
     .page-header__top
-    nav.main-nav
-      ul.main-nav__list
-        li.main-nav__item
-          a(href="/") Главная
-        li.main-nav__item Услуги
-          ul.main-nav__list-lvl2
-            li.main-nav__item.main-nav__item--dropdown Юридические услуги
-              ul.main-nav__list-lvl3
-                li.main-nav__item
-                  a(href="#") Регистрация предприятий
-                li.main-nav__item
-                  a(href="#") Регистрация изменений
-                li.main-nav__item
-                  a(href="#") Ликвидация предприятий
-                li.main-nav__item
-                  a(href="#") Лицензирование
-            li.main-nav__item.main-nav__item--dropdown Бухгалтерские услуги
-              ul.main-nav__list-lvl3              
-                li.main-nav__item
-                  a(href="#") Бухгалтерское сопровождение
-                li.main-nav__item
-                  a(href="#") Подача отчетности
-                li.main-nav__item
-                  a(href="#") Анализ и аудит
-            li.main-nav__item
-              a(href="#") Сопровождение бизнеса
-            li.main-nav__item
-              a(href="#") Готовые предприятия
-        li.main-nav__item
-          a(href="about.html") О Компании
-        li.main-nav__item
-          a(href="news.html") Новости и статьи
-        li.main-nav__item
-          a(href="contacts.html") Контакты
+      .page-header__language
+        span язык: 
+        span(class="ru" data-lang="ru") русский
+        span(class="ua" data-lang="ua") украински
+      .page-header__info
+        .social.social--header
+          a(href="www.facebook.com" class="")
+            +icon("facebook", 14) 
+          a(href="www.googleplus.com" class="")
+            +icon("gplus", 14)
+          a(href="www.twitter.com" class="")
+            +icon("twitter", 14)
+        .page-header__mail
+          a(href="mailto:office@reklor.kiev.ua") office@reklor.kiev.ua
+        .page-header__phones
+          a(href="tel:0442231995") (044) 223 19 95
+          a(href="tel:0986398787") (098) 639 87 87
+    .page-header__body
+      nav.main-nav
+        ul.main-nav__list
+          li.main-nav__item
+            a(href="/") Главная
+          li.main-nav__item Услуги
+            ul.main-nav__list-lvl2
+              li.main-nav__item.main-nav__item--dropdown Юридические услуги
+                ul.main-nav__list-lvl3
+                  li.main-nav__item
+                    a(href="#") Регистрация предприятий
+                  li.main-nav__item
+                    a(href="#") Регистрация изменений
+                  li.main-nav__item
+                    a(href="#") Ликвидация предприятий
+                  li.main-nav__item
+                    a(href="#") Лицензирование
+              li.main-nav__item.main-nav__item--dropdown Бухгалтерские услуги
+                ul.main-nav__list-lvl3              
+                  li.main-nav__item
+                    a(href="#") Бухгалтерское сопровождение
+                  li.main-nav__item
+                    a(href="#") Подача отчетности
+                  li.main-nav__item
+                    a(href="#") Анализ и аудит
+              li.main-nav__item
+                a(href="#") Сопровождение бизнеса
+              li.main-nav__item
+                a(href="#") Готовые предприятия
+          li.main-nav__item
+            a(href="about.html") О Компании
+          li.main-nav__item
+            a(href="news.html") Новости и статьи
+          li.main-nav__item
+            a(href="contacts.html") Контакты
+      a.logo(href="/")
+        +icon("logo", 318, 68)

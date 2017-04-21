@@ -1,8 +1,53 @@
 .page-header {
+  padding-top: 25px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__mail {
+    margin-right: 14px;
+
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      color: @grey;
+      text-decoration: underline;
+    }
+  }
+
+  &__phones {
+
+    a {
+      margin-right: 14px;
+      font-size: 19px;
+      font-weight: bold;
+      color: @orange;
+    }
+    
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .container {
-    padding: 0 70px;    
-    @media @phone {
-      padding: 0;
+  }
+
+  &__language {
+    span {      
+      color: @lightblue;
+      font-weight: bold;
+    }
+    .ua {
+      display: none;
     }
   }
 }
